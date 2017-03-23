@@ -33,6 +33,7 @@
             this.tsbCadastrarCliente = new System.Windows.Forms.ToolStripButton();
             this.stbCadastrarProduto = new System.Windows.Forms.ToolStripButton();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.tsbRegistraVenda = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
@@ -41,12 +42,14 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbCadastrarCliente,
-            this.stbCadastrarProduto});
+            this.stbCadastrarProduto,
+            this.tsbRegistraVenda});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(395, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // tsbCadastrarCliente
             // 
@@ -80,6 +83,16 @@
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
+            // tsbRegistraVenda
+            // 
+            this.tsbRegistraVenda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbRegistraVenda.Image = ((System.Drawing.Image)(resources.GetObject("tsbRegistraVenda.Image")));
+            this.tsbRegistraVenda.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbRegistraVenda.Name = "tsbRegistraVenda";
+            this.tsbRegistraVenda.Size = new System.Drawing.Size(23, 22);
+            this.tsbRegistraVenda.Text = "Registrar Venda";
+            this.tsbRegistraVenda.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.ToolStripButton tsbCadastrarCliente;
         private System.Windows.Forms.ToolStripButton stbCadastrarProduto;
         private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.ToolStripButton tsbRegistraVenda;
     }
 }

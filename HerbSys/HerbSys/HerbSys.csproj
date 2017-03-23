@@ -46,24 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCadastraCliente.cs">
+    <Compile Include="VIEW\FormCadastraCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCadastraCliente.Designer.cs">
+    <Compile Include="VIEW\FormCadastraCliente.Designer.cs">
       <DependentUpon>FormCadastraCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPrincipal.cs">
+    <Compile Include="VIEW\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPrincipal.Designer.cs">
+    <Compile Include="VIEW\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormCadastraCliente.resx">
+    <EmbeddedResource Include="VIEW\FormCadastraCliente.resx">
       <DependentUpon>FormCadastraCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipal.resx">
+    <EmbeddedResource Include="VIEW\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
