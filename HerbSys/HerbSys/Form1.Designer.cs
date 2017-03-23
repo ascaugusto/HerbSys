@@ -39,9 +39,9 @@
             this.lbName = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lbAdress = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.lbCEP = new System.Windows.Forms.Label();
-            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
+            this.mskCep = new System.Windows.Forms.MaskedTextBox();
             this.lbBairro = new System.Windows.Forms.Label();
             this.lbCidade = new System.Windows.Forms.Label();
             this.lbUF = new System.Windows.Forms.Label();
@@ -50,12 +50,16 @@
             this.txtUf = new System.Windows.Forms.TextBox();
             this.lbTelefone = new System.Windows.Forms.Label();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsbBuscaPorId = new System.Windows.Forms.ToolStripLabel();
+            this.tstId = new System.Windows.Forms.ToolStripTextBox();
+            this.tsbBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(12, 46);
+            this.txtId.Location = new System.Drawing.Point(12, 47);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 0;
@@ -76,7 +80,11 @@
             this.tsbNovo,
             this.tsbSalvar,
             this.tsbCancelar,
-            this.tsbExcluir});
+            this.tsbExcluir,
+            this.toolStripSeparator1,
+            this.tsbBuscaPorId,
+            this.tstId,
+            this.tsbBuscar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(554, 25);
@@ -131,7 +139,7 @@
             // txtNome
             // 
             this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNome.Location = new System.Drawing.Point(123, 46);
+            this.txtNome.Location = new System.Drawing.Point(123, 47);
             this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(418, 20);
@@ -145,14 +153,15 @@
             this.lbAdress.Size = new System.Drawing.Size(53, 13);
             this.lbAdress.TabIndex = 5;
             this.lbAdress.Text = "Endereço";
+            this.lbAdress.Click += new System.EventHandler(this.lbAdress_Click);
             // 
-            // textBox1
+            // txtEndereco
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 97);
-            this.textBox1.MaxLength = 50;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(526, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtEndereco.Location = new System.Drawing.Point(12, 97);
+            this.txtEndereco.MaxLength = 50;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(526, 20);
+            this.txtEndereco.TabIndex = 6;
             // 
             // lbCEP
             // 
@@ -163,13 +172,14 @@
             this.lbCEP.TabIndex = 7;
             this.lbCEP.Text = "CEP";
             // 
-            // mskCEP
+            // mskCep
             // 
-            this.mskCEP.Location = new System.Drawing.Point(12, 137);
-            this.mskCEP.Mask = "00000-999";
-            this.mskCEP.Name = "mskCEP";
-            this.mskCEP.Size = new System.Drawing.Size(62, 20);
-            this.mskCEP.TabIndex = 8;
+            this.mskCep.Location = new System.Drawing.Point(12, 137);
+            this.mskCep.Mask = "00000-999";
+            this.mskCep.Name = "mskCep";
+            this.mskCep.Size = new System.Drawing.Size(62, 20);
+            this.mskCep.TabIndex = 8;
+            this.mskCep.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCEP_MaskInputRejected);
             // 
             // lbBairro
             // 
@@ -242,11 +252,37 @@
             this.mskTelefone.Size = new System.Drawing.Size(85, 20);
             this.mskTelefone.TabIndex = 16;
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tsbBuscaPorId
+            // 
+            this.tsbBuscaPorId.Name = "tsbBuscaPorId";
+            this.tsbBuscaPorId.Size = new System.Drawing.Size(80, 22);
+            this.tsbBuscaPorId.Text = "Buscar por ID:";
+            // 
+            // tstId
+            // 
+            this.tstId.Name = "tstId";
+            this.tstId.Size = new System.Drawing.Size(100, 25);
+            this.tstId.Click += new System.EventHandler(this.toolStripTextBox1_Click);
+            // 
+            // tsbBuscar
+            // 
+            this.tsbBuscar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("tsbBuscar.Image")));
+            this.tsbBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbBuscar.Name = "tsbBuscar";
+            this.tsbBuscar.Size = new System.Drawing.Size(23, 22);
+            this.tsbBuscar.Text = "Buscar";
+            // 
             // frmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 221);
+            this.ClientSize = new System.Drawing.Size(554, 268);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.lbTelefone);
             this.Controls.Add(this.txtUf);
@@ -255,9 +291,9 @@
             this.Controls.Add(this.lbUF);
             this.Controls.Add(this.lbCidade);
             this.Controls.Add(this.lbBairro);
-            this.Controls.Add(this.mskCEP);
+            this.Controls.Add(this.mskCep);
             this.Controls.Add(this.lbCEP);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.lbAdress);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lbName);
@@ -267,6 +303,7 @@
             this.Name = "frmCadastroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Cliente";
+            this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -286,9 +323,9 @@
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lbAdress;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label lbCEP;
-        private System.Windows.Forms.MaskedTextBox mskCEP;
+        private System.Windows.Forms.MaskedTextBox mskCep;
         private System.Windows.Forms.Label lbBairro;
         private System.Windows.Forms.Label lbCidade;
         private System.Windows.Forms.Label lbUF;
@@ -297,6 +334,10 @@
         private System.Windows.Forms.TextBox txtUf;
         private System.Windows.Forms.Label lbTelefone;
         private System.Windows.Forms.MaskedTextBox mskTelefone;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel tsbBuscaPorId;
+        private System.Windows.Forms.ToolStripTextBox tstId;
+        private System.Windows.Forms.ToolStripButton tsbBuscar;
     }
 }
 
