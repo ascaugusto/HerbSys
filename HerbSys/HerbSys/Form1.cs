@@ -12,6 +12,9 @@ namespace HerbSys
 {
     public partial class frmCadastroCliente : Form
     {
+        //string connectionString = @"Server=.\sqlexpress;Database=bdcadastro;Trusted_Connection=True;";
+        bool novo;
+
         public frmCadastroCliente()
         {
             InitializeComponent();
@@ -69,7 +72,8 @@ namespace HerbSys
             txtCidade.Enabled = true;
             txtUf.Enabled = true;
             mskTelefone.Enabled = true;
-            txtNome.Focus();            
+            txtNome.Focus();
+            novo = true;
         }
     }
 }
