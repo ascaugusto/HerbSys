@@ -1,4 +1,4 @@
-# TRABALHO INTEGRADO: Título do trabalho
+# TRABALHO INTEGRADO: HerbSys
 
 Trabalho desenvolvido durante as disciplinas de:
 - Engenharia de Software, 
