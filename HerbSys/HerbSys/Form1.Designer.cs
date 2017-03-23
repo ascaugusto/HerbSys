@@ -99,6 +99,7 @@
             this.tsbNovo.Name = "tsbNovo";
             this.tsbNovo.Size = new System.Drawing.Size(23, 22);
             this.tsbNovo.Text = "Novo";
+            this.tsbNovo.Click += new System.EventHandler(this.tsbNovo_Click);
             // 
             // tsbSalvar
             // 
