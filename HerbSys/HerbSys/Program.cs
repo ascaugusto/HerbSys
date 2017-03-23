@@ -16,7 +16,7 @@ namespace HerbSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroCliente());
+            Application.Run(new FormPrincipal());
         }
     }
 }

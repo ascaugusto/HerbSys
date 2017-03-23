@@ -1,1 +1,10 @@
 C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\bin\Debug\HerbSys.exe.config
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\bin\Debug\HerbSys.exe
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\bin\Debug\HerbSys.pdb
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.csprojResolveAssemblyReference.cache
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.frmCadastroCliente.resources
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.Properties.Resources.resources
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.csproj.GenerateResource.Cache
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.exe
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.pdb
+C:\Users\augusto.coelho\repositorio\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.FormPrincipal.resources
