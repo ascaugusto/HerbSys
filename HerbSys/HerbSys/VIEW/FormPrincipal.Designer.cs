@@ -91,7 +91,7 @@
             this.tsbRegistraVenda.Name = "tsbRegistraVenda";
             this.tsbRegistraVenda.Size = new System.Drawing.Size(23, 22);
             this.tsbRegistraVenda.Text = "Registrar Venda";
-            this.tsbRegistraVenda.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.tsbRegistraVenda.Click += new System.EventHandler(this.tooltsbRegistraVenda_Click);
             // 
             // FormPrincipal
             // 

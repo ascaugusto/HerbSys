@@ -24,14 +24,14 @@ namespace HerbSys
 
         private void stbCadastrarProduto_Click(object sender, EventArgs e)
         {
-
+            VIEW.FormController formController = new VIEW.FormController();
+            formController.callFormCadastraProduto();
         }
 
         private void tsbCadastrarCliente_Click(object sender, EventArgs e)
         {
-            frmCadastroCliente formcadastrocliente = new frmCadastroCliente();
-            formcadastrocliente.Show();
-
+            VIEW.FormController formController = new VIEW.FormController();
+            formController.callFormCadastraCliente();
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -39,7 +39,7 @@ namespace HerbSys
 
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void tooltsbRegistraVenda_Click(object sender, EventArgs e)
         {
 
         }

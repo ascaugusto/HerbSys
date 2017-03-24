@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="VIEW\FormController.cs" />
     <Compile Include="VIEW\FormCadastraCliente.cs">
       <SubType>Form</SubType>
     </Compile>
