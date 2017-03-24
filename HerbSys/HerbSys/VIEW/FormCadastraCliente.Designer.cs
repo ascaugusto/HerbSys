@@ -36,6 +36,10 @@
             this.tsbSalvar = new System.Windows.Forms.ToolStripButton();
             this.tsbCancelar = new System.Windows.Forms.ToolStripButton();
             this.tsbExcluir = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsbBuscaPorId = new System.Windows.Forms.ToolStripLabel();
+            this.tstId = new System.Windows.Forms.ToolStripTextBox();
+            this.tsbBuscar = new System.Windows.Forms.ToolStripButton();
             this.lbName = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lbAdress = new System.Windows.Forms.Label();
@@ -50,10 +54,6 @@
             this.txtUf = new System.Windows.Forms.TextBox();
             this.lbTelefone = new System.Windows.Forms.Label();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsbBuscaPorId = new System.Windows.Forms.ToolStripLabel();
-            this.tstId = new System.Windows.Forms.ToolStripTextBox();
-            this.tsbBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +109,7 @@
             this.tsbSalvar.Name = "tsbSalvar";
             this.tsbSalvar.Size = new System.Drawing.Size(23, 22);
             this.tsbSalvar.Text = "Salvar";
+            this.tsbSalvar.Click += new System.EventHandler(this.tsbSalvar_Click);
             // 
             // tsbCancelar
             // 
@@ -118,6 +119,7 @@
             this.tsbCancelar.Name = "tsbCancelar";
             this.tsbCancelar.Size = new System.Drawing.Size(23, 22);
             this.tsbCancelar.Text = "Cancelar";
+            this.tsbCancelar.Click += new System.EventHandler(this.tsbCancelar_Click);
             // 
             // tsbExcluir
             // 
@@ -127,6 +129,32 @@
             this.tsbExcluir.Name = "tsbExcluir";
             this.tsbExcluir.Size = new System.Drawing.Size(23, 22);
             this.tsbExcluir.Text = "Excluir";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tsbBuscaPorId
+            // 
+            this.tsbBuscaPorId.Name = "tsbBuscaPorId";
+            this.tsbBuscaPorId.Size = new System.Drawing.Size(80, 22);
+            this.tsbBuscaPorId.Text = "Buscar por ID:";
+            // 
+            // tstId
+            // 
+            this.tstId.Name = "tstId";
+            this.tstId.Size = new System.Drawing.Size(100, 25);
+            this.tstId.Click += new System.EventHandler(this.toolStripTextBox1_Click);
+            // 
+            // tsbBuscar
+            // 
+            this.tsbBuscar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("tsbBuscar.Image")));
+            this.tsbBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbBuscar.Name = "tsbBuscar";
+            this.tsbBuscar.Size = new System.Drawing.Size(23, 22);
+            this.tsbBuscar.Text = "Buscar";
             // 
             // lbName
             // 
@@ -252,32 +280,6 @@
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(85, 20);
             this.mskTelefone.TabIndex = 16;
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // tsbBuscaPorId
-            // 
-            this.tsbBuscaPorId.Name = "tsbBuscaPorId";
-            this.tsbBuscaPorId.Size = new System.Drawing.Size(80, 22);
-            this.tsbBuscaPorId.Text = "Buscar por ID:";
-            // 
-            // tstId
-            // 
-            this.tstId.Name = "tstId";
-            this.tstId.Size = new System.Drawing.Size(100, 25);
-            this.tstId.Click += new System.EventHandler(this.toolStripTextBox1_Click);
-            // 
-            // tsbBuscar
-            // 
-            this.tsbBuscar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("tsbBuscar.Image")));
-            this.tsbBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbBuscar.Name = "tsbBuscar";
-            this.tsbBuscar.Size = new System.Drawing.Size(23, 22);
-            this.tsbBuscar.Text = "Buscar";
             // 
             // frmCadastroCliente
             // 

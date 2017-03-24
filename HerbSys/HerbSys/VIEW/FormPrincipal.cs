@@ -41,6 +41,12 @@ namespace HerbSys
 
         private void tooltsbRegistraVenda_Click(object sender, EventArgs e)
         {
+            VIEW.FormController formController = new VIEW.FormController();
+            formController.callRegistraVenda();
+        }
+
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
 
         }
     }

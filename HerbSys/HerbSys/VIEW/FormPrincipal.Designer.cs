@@ -32,8 +32,8 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbCadastrarCliente = new System.Windows.Forms.ToolStripButton();
             this.stbCadastrarProduto = new System.Windows.Forms.ToolStripButton();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.tsbRegistraVenda = new System.Windows.Forms.ToolStripButton();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,16 @@
             this.stbCadastrarProduto.Text = "Cadastrar Produto";
             this.stbCadastrarProduto.Click += new System.EventHandler(this.stbCadastrarProduto_Click);
             // 
+            // tsbRegistraVenda
+            // 
+            this.tsbRegistraVenda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbRegistraVenda.Image = ((System.Drawing.Image)(resources.GetObject("tsbRegistraVenda.Image")));
+            this.tsbRegistraVenda.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbRegistraVenda.Name = "tsbRegistraVenda";
+            this.tsbRegistraVenda.Size = new System.Drawing.Size(23, 22);
+            this.tsbRegistraVenda.Text = "Registrar Venda";
+            this.tsbRegistraVenda.Click += new System.EventHandler(this.tooltsbRegistraVenda_Click);
+            // 
             // pbLogo
             // 
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -82,16 +92,7 @@
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
-            // 
-            // tsbRegistraVenda
-            // 
-            this.tsbRegistraVenda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbRegistraVenda.Image = ((System.Drawing.Image)(resources.GetObject("tsbRegistraVenda.Image")));
-            this.tsbRegistraVenda.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbRegistraVenda.Name = "tsbRegistraVenda";
-            this.tsbRegistraVenda.Size = new System.Drawing.Size(23, 22);
-            this.tsbRegistraVenda.Text = "Registrar Venda";
-            this.tsbRegistraVenda.Click += new System.EventHandler(this.tooltsbRegistraVenda_Click);
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // FormPrincipal
             // 
