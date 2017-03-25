@@ -28,21 +28,27 @@ O sistema HerbSys deve cadastrar o seus clientes da Herbalife persistindo seu cp
 
 | ID | Categoria| História de Usuário| Importância | MosCoW| Estimativa | Real| Pronto?| Sprint|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| RF01 | Categoria X |EU, COMO  **QUEM**, QUERO/GOSTARIA/DEVO/POSSO **O QUE**, PARA QUE/DE/PARA **PORQUE/RESULTADO**. |10| Must| 2 | ? | Não | -|
-| RF02 | Acesso os dados |EU, COMO cliente, POSSO acessar o acerto da locadora PARA QUE consiga ver os filmes disponíveis antes de sair de casa.| 80| Should | 3 |5| Sim| 1|
+| RF01 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO CADASTRAR TODOS MEUS CLIENTES HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS. |35| Must| 3 | 3 | Sim | 1|
+| RF02 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO CADASTRAR TODOS MEUS PRODUTOS HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS.| 35| Must | 3 |3| Não| 2|
+| RF02 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO REGISTRAR TODAS MINHAS VENDAS HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS.| 35| Must | 3 |3| Não| 3|
 
 ### 4.2	Requisitos Não Funcionais
 | ID | Categoria| Descrição |MosCoW | Estimativa Planejada | Estimativa Real|Pronto?| Sprint|Histórias relacionadas |
 | --- | --- | --- | --- | --- |--- |--- |--- |--- |
-| RNF01 |Facilidade de Operação |  A entrada de dados de efetuar locação pelo atendente deverá ser realizada em no máximo 30 segundos | Must | 2 | 5| Sim| 10|RF01|
-| RNF02 | Eficiência de Tempo | O tempo de resposta de efetuar locação dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|RF01 e RF02|
+| RNF01 |Facilidade de Operação |  A entrada de dados de cadastrar clientes pelo usuário deverá ser realizada em no máximo 30 segundos | Must | 2 | 5| Sim| 10|RF01|
+| RNF02 | Eficiência de Tempo | O tempo de resposta de cadastrar um cliente dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|RF01 e RF02|
+| RNF03 |Facilidade de Operação |  A entrada de dados de cadastrar produtos pelo usuário deverá ser realizada em no máximo 30 segundos | Must | 2 | 5| Não| 10|RF01|
+| RNF04 | Eficiência de Tempo | O tempo de resposta de cadastrar um produto dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|RF03 e RF04|
+| RNF05 |Facilidade de Operação |  A entrada de dados de registro de uma venda pelo usuário deverá ser realizada em no máximo 60 segundos | Must | 2 | 5| Não| 10|RF01|
+| RNF06 | Eficiência de Tempo | O tempo de resposta de registro de uma venda dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|RF05 e RF06|
 
 ### 4.3	Regras de Negócio
+#Exemplo do professor# 
 | ID | Descrição | MosCoW | Estimativa Planejada| Estimativa Real| Pronto?| Sprint|Histórias relacionadas |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | RN01 | Uma reserva expira quando passadas mais do que 24h de sua comunicação para o cliente. | Must |1|5|Sim|2|RF01|
 | RN02 | Clientes em atraso não podem efetuar nem locações nem reservas. | Should |10|5|Sim|2|RF02|
-
+#Exemplo do professor#
 
 # Desenvolvimento do Sistema
 ## 1.    Análise de Sistemas:
