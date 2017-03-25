@@ -75,6 +75,8 @@ descrever tecnologias usadas no sistema, justificando cada uma delas com base no
 
 
 #### 2.1.3   Arquitetura de Software
+Diagrama de Arquitetura.
+
 ![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/Archtecture_Diagram.jpg?raw=true "Modelo Conceitual")
 
 Foi aplicado o padrão MVC no HerbSys para que o código fonte do sistema fique bem organizado de maneira em que facilite manutenções futuras na camada de Interface com o Usuário sem comprometer os modelos de vice e versa. 
