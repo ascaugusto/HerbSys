@@ -28,9 +28,9 @@ O sistema HerbSys deve cadastrar o seus clientes da Herbalife persistindo seu cp
 
 | ID | Categoria| História de Usuário| Importância | MosCoW| Estimativa | Real| Pronto?| Sprint|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| RF01 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO CADASTRAR TODOS MEUS CLIENTES HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS. |35| Must| 3 | 3 | Sim | 1|
-| RF02 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO CADASTRAR TODOS MEUS PRODUTOS HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS.| 35| Must | 3 |3| Não| 2|
-| RF02 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO REGISTRAR TODAS MINHAS VENDAS HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS.| 35| Must | 3 |3| Não| 3|
+| RF01 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO INSERIR/ALTERAR/REMOVER TODOS MEUS CLIENTES HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS. |35| Must| 3 | 3 | Sim | 1|
+| RF02 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO INSERIR/ALTERAR/REMOVER TODOS MEUS PRODUTOS HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS.| 35| Must | 3 |3| Não| 2|
+| RF03 | Cadastro de dados |EU, COMO  USUÁRIO DO HERBSYS, QUERO INSERIR/ALTERAR/REMOVER TODAS MINHAS VENDAS HERBALIFE, PARA QUE EU POSSA TER UM CONTROLE E O REGISTRO DOS MESMOS.| 35| Must | 3 |3| Não| 3|
 
 ### 4.2	Requisitos Não Funcionais
 | ID | Categoria| Descrição |MosCoW | Estimativa Planejada | Estimativa Real|Pronto?| Sprint|Histórias relacionadas |
@@ -43,12 +43,12 @@ O sistema HerbSys deve cadastrar o seus clientes da Herbalife persistindo seu cp
 | RNF06 | Eficiência de Tempo | O tempo de resposta de registro de uma venda dever ser de no máximo 2 segundos a partir da entrada correta de dados | Should | 3 | ?| Não| -|RF05 e RF06|
 
 ### 4.3	Regras de Negócio
-#Exemplo do professor# 
+
 | ID | Descrição | MosCoW | Estimativa Planejada| Estimativa Real| Pronto?| Sprint|Histórias relacionadas |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| RN01 | Uma reserva expira quando passadas mais do que 24h de sua comunicação para o cliente. | Must |1|5|Sim|2|RF01|
-| RN02 | Clientes em atraso não podem efetuar nem locações nem reservas. | Should |10|5|Sim|2|RF02|
-#Exemplo do professor#
+| RN01 | O sistema deve inserir/alterar/remover os clientes na base de dados| Must |1|5|Sim|2|RF01|
+| RN02 | O sistema deve inserir/alterar/remover os produtos na base de dados| Must |1|5|Sim|2|RF02|
+| RN03 | O sistema deve inserir/alterar/remover as vendas na base de dados| Must |1|5|Sim|2|RF03|
 
 # Desenvolvimento do Sistema
 ## 1.    Análise de Sistemas:
