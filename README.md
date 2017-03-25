@@ -53,7 +53,7 @@ inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
 ** ATENÇO: USAR Notação Entidade-Relacionamentos se estiver fazendo BD2 e o diagrama de classes se estiver fazendo Projeto de Sistemas**
-![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/Archtecture_Diagram.jpg?raw=true "Modelo Conceitual")
+![Alt text]
 ### 1.4  Modelagem Comportamental
 inserir principais diagramas comportamentais da análise (principalmente, estados)
 ### 1.5  Dicionário de Dados
@@ -75,7 +75,9 @@ descrever tecnologias usadas no sistema, justificando cada uma delas com base no
 
 
 #### 2.1.3   Arquitetura de Software
-apresentar diagrama UML da arquitetura do sistema. justificar as decisões tomadas.
+(https://github.com/ascaugusto/HerbSys/blob/master/Archtecture_Diagram.jpg?raw=true "Modelo Conceitual")
+
+Foi aplicado o padrão MVC no HerbSys para que o código fonte do sistema fique bem organizado de maneira em que facilite manutenções futuras na camada de Interface com o Usuário sem comprometer os modelos de vice e versa. 
 
 ### 2.2. Projeto Detalhado
 OBS: repetir as seções abaixo para cada subsistema
