@@ -61,25 +61,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="VIEW\FormController.cs" />
-    <Compile Include="VIEW\FormCadastraCliente.cs">
+    <Compile Include="Controller\FormController.cs" />
+    <Compile Include="View\FormCadastraCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VIEW\FormCadastraCliente.Designer.cs">
+    <Compile Include="View\FormCadastraCliente.Designer.cs">
       <DependentUpon>FormCadastraCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="VIEW\FormPrincipal.cs">
+    <Compile Include="View\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VIEW\FormPrincipal.Designer.cs">
+    <Compile Include="View\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="VIEW\FormCadastraCliente.resx">
+    <EmbeddedResource Include="View\FormCadastraCliente.resx">
       <DependentUpon>FormCadastraCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VIEW\FormPrincipal.resx">
+    <EmbeddedResource Include="View\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

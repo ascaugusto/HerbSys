@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HerbSys.VIEW;
 
 namespace HerbSys
 {
@@ -24,13 +25,13 @@ namespace HerbSys
 
         private void stbCadastrarProduto_Click(object sender, EventArgs e)
         {
-            VIEW.FormController formController = new VIEW.FormController();
+            FormController formController = new FormController();
             formController.callFormCadastraProduto();
         }
 
         private void tsbCadastrarCliente_Click(object sender, EventArgs e)
         {
-            VIEW.FormController formController = new VIEW.FormController();
+			FormController formController = new FormController();
             formController.callFormCadastraCliente();
         }
 
@@ -41,7 +42,7 @@ namespace HerbSys
 
         private void tooltsbRegistraVenda_Click(object sender, EventArgs e)
         {
-            VIEW.FormController formController = new VIEW.FormController();
+            FormController formController = new FormController();
             formController.callRegistraVenda();
         }
 
