@@ -9,19 +9,19 @@ namespace HerbSys.VIEW
 {
     class FormController
     {
-        public void callFormCadastraCliente()
+        public void CallFormCadastraCliente()
         {
             frmCadastroCliente formcadastrocliente = new frmCadastroCliente();
             formcadastrocliente.Show();
         }
 
-        public void callFormCadastraProduto()
+        public void CallFormCadastraProduto()
         {
             MessageBox.Show("Página em manutenção!", "Manutenção",
             MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
 
-        public void callRegistraVenda()
+        public void CallRegistraVenda()
         {
             MessageBox.Show("Página em manutenção!", "Manutenção",
             MessageBoxButtons.OK, MessageBoxIcon.Asterisk);

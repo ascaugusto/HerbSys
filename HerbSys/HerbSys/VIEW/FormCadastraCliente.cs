@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HerbSys.Controller;
+using HerbSys.Model;
 
 namespace HerbSys
 {
     public partial class frmCadastroCliente : Form
     {
-        //string connectionString = @"Server=.\sqlexpress;Database=bdcadastro;Trusted_Connection=True;";
-        bool novo;
-
         public frmCadastroCliente()
         {
             InitializeComponent();
@@ -73,12 +72,32 @@ namespace HerbSys
             txtUf.Enabled = true;
             mskTelefone.Enabled = true;
             txtNome.Focus();
-            novo = true;
         }
 
         private void tsbSalvar_Click(object sender, EventArgs e)
         {
+            ClienteBD.DadosCliente dadosCliente = new ClienteBD.DadosCliente();
+            int insRetorno;
 
+            dadosCliente.cpf_cnpj = txtId.Text;
+            dadosCliente.nome = txtNome.Text;
+            dadosCliente.endereco = txtEndereco.Text;
+            dadosCliente.cep = mskCep.Text ;
+            dadosCliente.bairro = txtBairro.Text;
+            dadosCliente.cidade = txtCidade.Text;
+            dadosCliente.uf = txtUf.Text;
+            dadosCliente.telefone = mskTelefone.Text ;
+
+            DataController dataController = new DataController();
+            insRetorno = dataController.InserirCliente(dadosCliente);
+
+            if (insRetorno == 1)
+            {
+                MessageBox.Show("Cliente cadastrado com sucesso!", "Cadastro",
+                MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+
+                
         }
 
         private void tsbCancelar_Click(object sender, EventArgs e)
@@ -104,6 +123,11 @@ namespace HerbSys
             txtCidade.Text = "";
             txtUf.Text = "";
             mskTelefone.Text = "";
+        }
+
+        private void mskTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

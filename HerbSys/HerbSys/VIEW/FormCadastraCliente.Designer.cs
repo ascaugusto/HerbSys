@@ -70,9 +70,9 @@
             this.lbId.AutoSize = true;
             this.lbId.Location = new System.Drawing.Point(9, 30);
             this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(18, 13);
+            this.lbId.Size = new System.Drawing.Size(59, 13);
             this.lbId.TabIndex = 1;
-            this.lbId.Text = "ID";
+            this.lbId.Text = "CPF/CNPJ";
             // 
             // toolStrip1
             // 
@@ -187,7 +187,7 @@
             // txtEndereco
             // 
             this.txtEndereco.Location = new System.Drawing.Point(12, 97);
-            this.txtEndereco.MaxLength = 50;
+            this.txtEndereco.MaxLength = 100;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(526, 20);
             this.txtEndereco.TabIndex = 6;
@@ -280,6 +280,7 @@
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(85, 20);
             this.mskTelefone.TabIndex = 16;
+            this.mskTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskTelefone_MaskInputRejected);
             // 
             // frmCadastroCliente
             // 

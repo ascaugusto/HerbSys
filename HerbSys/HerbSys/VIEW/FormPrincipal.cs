@@ -26,13 +26,13 @@ namespace HerbSys
         private void stbCadastrarProduto_Click(object sender, EventArgs e)
         {
             FormController formController = new FormController();
-            formController.callFormCadastraProduto();
+            formController.CallFormCadastraProduto();
         }
 
         private void tsbCadastrarCliente_Click(object sender, EventArgs e)
         {
 			FormController formController = new FormController();
-            formController.callFormCadastraCliente();
+            formController.CallFormCadastraCliente();
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -43,7 +43,7 @@ namespace HerbSys
         private void tooltsbRegistraVenda_Click(object sender, EventArgs e)
         {
             FormController formController = new FormController();
-            formController.callRegistraVenda();
+            formController.CallRegistraVenda();
         }
 
         private void pbLogo_Click(object sender, EventArgs e)
