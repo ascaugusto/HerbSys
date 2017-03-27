@@ -53,31 +53,48 @@ O sistema HerbSys deve cadastrar o seus clientes da Herbalife persistindo seu cp
 # Desenvolvimento do Sistema
 ## 1.    Análise de Sistemas:
 ### 1.1  Subsistemas
-inserir diagrama dos subsistemas UML
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/Archtecture_Diagram.jpg?raw=true "Modelo Conceitual")
 ### 1.2  Modelagem de Casos de uso 
-inserir diagramas dos Casos de Uso (UML) e descrever brevemente.
-
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/useCase.jpg?raw=true "Modelo Conceitual")
+O Distruibuidor(Usuáro) mantém o cliente e o produto. O Distruibuidor(Usuário) cadastra uma compra ou uma venda. O Distruibuidor(Usuário) consulta uma compra ou uma venda e pode gerar relatório de compras ou de uma vendas em um determinado período. 
 ### 1.3  Modelagem Estrutural (Modelo Conceitual)
-** ATENÇO: USAR Notação Entidade-Relacionamentos se estiver fazendo BD2 e o diagrama de classes se estiver fazendo Projeto de Sistemas**
-![Alt text]
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/ClassDiagram.jpg?raw=true "Modelo Conceitual")
 ### 1.4  Modelagem Comportamental
 inserir principais diagramas comportamentais da análise (principalmente, estados)
 ### 1.5  Dicionário de Dados
-[classe/entidade]: [descrição da classe]
-    
-    EXEMPLO:
-    CLIENTE: classe/entidade que representa as informações relativas ao cliente<br>
-    CPF: atributo que representa o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-    
+   FormPrincipal: Classe referente a tela principal do HerbSys
+   FormCadastroCliente:  Classe referente a tela de formulário de cadastro de cliente.
+   DataController: Entidade responsável por controlar o as requisições das telas a base de dados
+   FormController: Entidade responsável por controlar as trocas de Telas.
+   DadosCliente: Estrutura que contém as informações relativas ao cliente.
+        cpf_cnpj: Dado de cadastro do cliente.
+        nome: Dado de cadastro do cliente.
+        endereco: Dado de cadastro do cliente.
+        bairro: Dado de cadastro do cliente.
+        cep: Dado de cadastro do cliente.
+        cidade: Dado de cadastro do cliente.
+        uf: Dado de cadastro do cliente.
+        telefone: Dado de cadastro do cliente.
+   Venda: Estrutura que contém as informações da venda.
+        data: Dado de cadastro da venda.
+        valor:  Dado de cadastro da venda.
+   Produto: Estrutura que contém as informações do Produto
+        nome: Dados de cadastro do produto.
+        valor: Dado de cadastro do produto.
+   ClienteBD: Entidade responsável por acessar a base de dados do cliente.
+   VendaBD: Entidade responsável por acessar a base de dados da venda.
+   ProdutoBD: Entidade responsável por acessar a base de dados do produto.
+        
 ## 2.    Projeto de Sistemas:
 ### 2.1  Projeto Arquitetural 
 #### 2.1.1   Plataforma de Implementação e Tecnologias
-descrever tecnologias usadas no sistema, justificando cada uma delas com base no contexto
+Foi utilizada a linguagem de programação C#: Uma linguagem de fácil entendimento e intuitividade. Possui um ótimo IDE.
+Foi utulizada a base de dados SQLite: Sistema requer uma pequena quantidade de dados estará disponível na máquina do cliente sem precisar estar em um servidor online.
 
 #### 2.1.2   Atributos de Qualidade e Táticas
  CATEGORIAS | RNF'S | TÁTICAS | 
 | --- | --- | --- |
-| Facilidade de Operação | RNF03, RNF08| Prover ao usuário a capacidade de entrar com comandos que permitam operar o sistema de modo mais eficiente. Para tal, as interfaces do sistema devem permitir, sempre que possível, a entrada por meio de seleção ou leitura de código de barras ao invés da digitação de campos. | 
+| Facilidade de Operação |RNF01, RNF03, RNF05| Prover ao usuário a capacidade de entrar com comandos que permitam operar o sistema de modo mais eficiente. Para tal, as interfaces do sistema devem permitir, sempre que possível, um design de entendimento rápido e direto para que o usuário já insira suas informações. | 
 
 
 #### 2.1.3   Arquitetura de Software
@@ -88,39 +105,37 @@ Diagrama de Arquitetura.
 Foi aplicado o padrão MVC no HerbSys para que o código fonte do sistema fique bem organizado de maneira em que facilite manutenções futuras na camada de Interface com o Usuário sem comprometer os modelos de vice e versa. 
 
 ### 2.2. Projeto Detalhado
-OBS: repetir as seções abaixo para cada subsistema
 #### 2.2.1.   Projeto da Lógica de Negócio
 ##### Projeto do Domínio
-apresentar diagrama de classes do domínio
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/ClassDiagram.jpg?raw=true "Modelo Conceitual")
 ##### Projeto da Aplicação
-apresentar diagramas de sequência e mapeamento dos casos de uso para classes
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/useCase.jpg?raw=true "Modelo Conceitual")
+*** Falta Diagrama de Sequência  ***
 #### 2.2.2.  Projeto da Interface com Usuário
 ##### Projeto da Visão
-apresentar protótipos de telas e diagramas de classes UML (caso realizado)
-OBS: Essa visão não tem nada a ver com Views de Banco de Dados
+Diagrama de Classes:
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/ClassDiagram.jpg?raw=true "Modelo Conceitual")
+Tela principal:
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/TelaPrincipal.jpg?raw=true "Modelo Conceitual")
+Tela de cadastro de clientes:
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/TelaCadastrarUsuario.jpg?raw=true "Modelo Conceitual")
 
-__OBS DE BD2__: neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-![Alt text](https://github.com/discipbd2/topicos-trabalho/blob/master/balsamiq.png?raw=true "Title")
 ##### Projeto da Interação Humana
-apresentar diagrama de classes da IU com controladores e diagrama de sequências. Apresentar diagrama com estados de navegação.
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/ClassDiagram.jpg?raw=true "Modelo Conceitual")
 #### 2.2.3.  Projeto da Persistência de Dados
-apresentar classes de acesso ao banco de dados. apresentar diagramas de sequência.
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/ClassDiagram.jpg?raw=true "Modelo Conceitual")
 
 #### 2.4.   Padrões
 ##### Padrões Arquiteturais
 ##### Padrões de Projeto
 
-No diagrama abaixo é destacado o padrão de projeto método fábrica que foi utilizado para melhorar a coesão e diminiuir o acoplamento entre as clases do sistema. O pode-se notar a classe FabricaDeFormatos cria os objetos FormatoPng, FormatoJpeg e FormatoGif tirando a dependencia entre a classes Main e essas classes. Vale ressaltar que o padrão utiliza um Interface Formato para diminiuir o acoplamento entre as classes.
+No diagrama abaixo é destacado o padrão MVC que organiza o código fonte do sistema e auxilia futuras manutenções ou mudanças de IU sem afetar a regra de negócio do sistema.
 
-![Alt text](https://github.com/felipefo/poo2/blob/master/Padroes_de_Projeto/Cria%C3%A7%C3%A3o/metodo_fabrica/ImagemMetodoFabrica/padrao_metodo_fabrica_conversao_imagem.png)
+![Alt text](https://github.com/ascaugusto/HerbSys/blob/master/ClassDiagram.jpg?raw=true "Modelo Conceitual")
 
 
-O padrão foi utilizado para resolver o problema de .....
-
-O padrão foi utilizado para resolver o problema de .....
+O padrão foi utilizado para resolver o problema de organização e manutenção.
 
 
 ## 3.    Banco de Dados (BD)
