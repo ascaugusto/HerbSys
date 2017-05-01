@@ -76,27 +76,28 @@ namespace HerbSys
 
         private void tsbSalvar_Click(object sender, EventArgs e)
         {
-            ClienteBD.DadosCliente dadosCliente = new ClienteBD.DadosCliente();
-            int insRetorno;
+            ClienteDB.Cliente dadosCliente = new ClienteDB.Cliente();
+            
+            dadosCliente.Cpf_cnpj = txtId.Text;
+            dadosCliente.Nome = txtNome.Text;
+            dadosCliente.Endereco = txtEndereco.Text;
+            dadosCliente.Cep = mskCep.Text ;
+            dadosCliente.Bairro = txtBairro.Text;
+            dadosCliente.Cidade = txtCidade.Text;
+            dadosCliente.Uf = txtUf.Text;
+            dadosCliente.Telefone = mskTelefone.Text ;
 
-            dadosCliente.cpf_cnpj = txtId.Text;
-            dadosCliente.nome = txtNome.Text;
-            dadosCliente.endereco = txtEndereco.Text;
-            dadosCliente.cep = mskCep.Text ;
-            dadosCliente.bairro = txtBairro.Text;
-            dadosCliente.cidade = txtCidade.Text;
-            dadosCliente.uf = txtUf.Text;
-            dadosCliente.telefone = mskTelefone.Text ;
-
-            DataController dataController = new DataController();
-            insRetorno = dataController.InserirCliente(dadosCliente);
-
-            if (insRetorno == 1)
+            try
             {
-                MessageBox.Show("Cliente cadastrado com sucesso!", "Cadastro",
+                DataController dataController = new DataController();
+                dataController.InserirCliente(dadosCliente);
+            }
+            catch(SystemException ex)
+            {
+                MessageBox.Show("Não foi possível salvar o cliente. " + ex, "Erro ao salvar",
                 MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
-
+            
                 
         }
 
