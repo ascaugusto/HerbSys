@@ -26,3 +26,4 @@ C:\Users\User\Gits\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.Properties.Resource
 C:\Users\User\Gits\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.csproj.GenerateResource.Cache
 C:\Users\User\Gits\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.exe
 C:\Users\User\Gits\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.pdb
+C:\Users\User\Gits\HerbSys\HerbSys\HerbSys\obj\Debug\HerbSys.csprojResolveAssemblyReference.cache

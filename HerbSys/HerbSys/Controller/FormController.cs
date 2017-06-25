@@ -18,8 +18,8 @@ namespace HerbSys.VIEW
 
         public void CallFormCadastraProduto()
         {
-            MessageBox.Show("Página em manutenção!", "Manutenção",
-            MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            FormCadastraProdutos formCadastraproduto = new FormCadastraProdutos();
+            formCadastraproduto.Show();
         }
 
         public void CallRegistraVenda()
