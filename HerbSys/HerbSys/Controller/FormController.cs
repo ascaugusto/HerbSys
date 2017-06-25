@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HerbSys.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,8 +24,9 @@ namespace HerbSys.VIEW
 
         public void CallRegistraVenda()
         {
-            MessageBox.Show("Página em manutenção!", "Manutenção",
-            MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            FormRegistraVenda formRegistraVenda = new FormRegistraVenda();
+            formRegistraVenda.Show();
+                        
         }
 
     }
