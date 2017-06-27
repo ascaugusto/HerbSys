@@ -26,5 +26,14 @@ namespace HerbSys.Controller
 
         }
 
+        public int InserirVenda(VendasBD.DadosVenda dadosVendas)
+        {
+            VendasBD vendas = new VendasBD();
+            int insRetorno;
+            insRetorno = vendas.inserir(dadosVendas);
+            return insRetorno;
+
+        }
+
     }
 }
